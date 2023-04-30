@@ -1,0 +1,20 @@
+#input_block{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+#get_age_button{
+  height: 25px;
+  min-width: 70px;
+  width: 20%;
+  border-radius: 5px;
+  border-width: 1px;
+  margin-left: calc(30% + 18px);
+}
+
+#input_field{
+  margin: 10px;
+  width: 50%;
+  min-width: 140px;
+}

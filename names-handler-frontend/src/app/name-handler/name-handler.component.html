@@ -1,0 +1,11 @@
+<h3>Get age for name</h3>
+
+<div id="input_block">
+  <label for="input_field">Enter name:</label>
+  <input type="text" id="input_field" [(ngModel)]="name">
+  <button id="get_age_button" (click)="getAge()">Get age</button>
+</div>
+
+<div *ngIf="age">
+  <p *ngIf="hasClickedButton">The age of {{lastInputName}} is {{age}}</p>
+</div>

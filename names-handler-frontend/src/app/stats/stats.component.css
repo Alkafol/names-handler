@@ -1,0 +1,18 @@
+#stats_buttons_block{
+  margin: 10px;
+}
+
+#freq_button{
+  margin-right: 10px;
+}
+
+.stats_buttons{
+  border-radius: 5px;
+  border-width: 1px;
+  height: 25px;
+  min-width: 100px;
+}
+
+.stats_block{
+  margin: 10px;
+}

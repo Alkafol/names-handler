@@ -1,0 +1,20 @@
+<h3>Statistics</h3>
+
+<div id="stats_buttons_block">
+  <button class="stats_buttons" id="freq_button" (click)="getFrequencyData()">Refresh frequency</button>
+  <button class="stats_buttons" id="max_age_button" (click)="getMaxAgeData()">Refresh max age</button>
+</div>
+
+<div class="stats_block" *ngIf="showFreq">
+  <h4>Frequency</h4>
+  <ng-container *ngFor="let item of frequencyData | keyvalue">
+    <div>{{ item.key }}: {{ item.value }}</div>
+  </ng-container>
+</div>
+
+<div class="stats_block" *ngIf="showMaxAge">
+  <h4>Max Age</h4>
+  <ng-container *ngFor="let item of maxAgeData | keyvalue">
+    <div>{{ item.key }}: {{ item.value }}</div>
+  </ng-container>
+</div>
